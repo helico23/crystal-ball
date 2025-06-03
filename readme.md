@@ -1,7 +1,7 @@
 # Crystal ball project
 
 This is the first personal project I created after an 8-week introduction course on HTML/CSS and JavaScript.
-It is a simple one-page website where you submit an open question through a form and receive an answer in return.
+It is a simple one-page website where you submit an open question through a form and receive a random answer out of 8 possibilities in return.
 It features some design elements and a small carousel where you can select your favorite crystal ball, hoping to increase your chances of getting a favorable answer.
 
 ## How it went
