@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    background-color: rgb(51, 51, 99);
+    color: antiquewhite;
+    --violet :rgb(105, 105, 173);
+
+
+}
+
+h1 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+      
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+    color: grey;
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.2rem;
+}
+
+input::placeholder{
+    color: var(--violet);
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.2rem;
+}
+
+textarea {
+color: grey;
+font-size: 1rem;
+font-family: "EB Garamond", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+padding: 0.2rem;
+}
+
+textarea::placeholder {
+    color: var(--violet);
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.2rem;
+  } 
+
+#monFormulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+label {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+img {
+    width: 125px;
+    height: 125px;
+    cursor: pointer;
+}
+
+img:hover{
+    transform: rotate(20deg);
+}
+
+.button {
+    background-color: var(--violet);
+    border-radius: 10px;
+    border-style: none;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    color: antiquewhite;
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+} 
+
+.button:hover {
+    scale: 110%;
+    background-color: antiquewhite;
+    color: var(--violet);
+}
+
+
+#reponse {
+    background-color: var(--violet);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 1rem;
+    width: 500px;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    width: 40%;
+    /* transition: opacity 1s; */
+}
+
+
+
+/* #reponse.visible {
+    opacity: 1;
+} */
+#changeBoules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+footer {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(250, 235, 215, 0.8);
+    margin-top: 2%;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: grey;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 1023px) { 
+    h1 {
+        font-size: 2rem;
+    } 
+
+    textarea {
+        width: 80%;
+    
+    }
+
+    #reponse{
+        width: 40%;
+    }
+
+ }
+
+
+@media screen and (max-width: 599px) { 
+    h1 {
+        font-size: 1.5rem;
+    } 
+
+    textarea {
+        width: 60%;
+    
+    }
+    #reponse{
+        width: 50%;
+    }
+
+ }
+
+
