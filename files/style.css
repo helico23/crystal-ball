@@ -1,3 +1,4 @@
+/* Base infos */ 
 * {
     margin: 0;
     padding: 0;
@@ -7,25 +8,25 @@
     background-color: rgb(51, 51, 99);
     color: antiquewhite;
     --violet :rgb(105, 105, 173);
+}
 
 
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-size: 2.5rem;
-    margin-top: 2rem;
-      
-}
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    margin-top: 2rem;   
 }
 
+/* Form */
 input {
     color: grey;
     font-size: 1rem;
@@ -64,7 +65,7 @@ textarea::placeholder {
     font-weight: 400;
     font-style: normal;
     padding: 0.2rem;
-  } 
+} 
 
 #monFormulaire{
     display: flex;
@@ -83,15 +84,9 @@ label {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
-img {
-    width: 125px;
-    height: 125px;
-    cursor: pointer;
-}
 
-img:hover{
-    transform: rotate(20deg);
-}
+
+/* All buttons */
 
 .button {
     background-color: var(--violet);
@@ -114,6 +109,8 @@ img:hover{
 }
 
 
+/* Answer section */
+
 #reponse {
     background-color: var(--violet);
     border-radius: 15px;
@@ -125,26 +122,34 @@ img:hover{
     font-weight: 400;
     font-style: normal; 
     width: 40%;
-    /* transition: opacity 1s; */
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 
+/* Carousel */
 
-/* #reponse.visible {
-    opacity: 1;
-} */
+img {
+    width: 125px;
+    height: 125px;
+    cursor: pointer;
+}
+
+img:hover{
+    transform: rotate(20deg);
+}
+
 #changeBoules {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-
 }
 
 
-.hidden {
-    visibility: hidden;
-}
+/* Footer */
 
 ul li {
     list-style-type: none;
@@ -166,7 +171,7 @@ footer a {
 }
 
 
-
+/* Other screen sizes */ 
 @media screen and (max-width: 1023px) { 
     h1 {
         font-size: 2rem;
@@ -174,13 +179,11 @@ footer a {
 
     textarea {
         width: 80%;
-    
     }
 
     #reponse{
         width: 40%;
     }
-
  }
 
 
@@ -191,12 +194,10 @@ footer a {
 
     textarea {
         width: 60%;
-    
     }
     #reponse{
         width: 50%;
     }
-
  }
 
 

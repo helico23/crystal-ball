@@ -1,13 +1,13 @@
 document.getElementById('monFormulaire').addEventListener('submit', function(e) {
     e.preventDefault(); 
 
-    //Vider la section réponse
+    //Clear the answer section
 let reponseSection = document.getElementById('reponse');
 reponseSection.classList.remove('hidden');
 reponseSection.innerHTML = '';
 
 
-//Section prénom recup et rend
+//Recovery firstname section and return it
 let prenomElement = document.createElement('span')
 document.getElementById('reponse').appendChild(prenomElement);
 
@@ -19,7 +19,7 @@ prenomElement.textContent  =`Bonjour, ${userName} ! Je sens une énergie particu
   prenomElement.textContent  ='Bonjour petit anonyme !'
 }
 
-//Section question
+//Question section
 let userQuestion = document.getElementById('question').value.trim();
 let userQuestionElement = document.createElement('div');
 
@@ -27,7 +27,7 @@ if (!userQuestion) {
     userQuestionElement.innerHTML = `<br>N'hésitez pas à poser une question à la boule de cristal... Elle brille d'impatience de vous répondre!` } 
     else {
     let randomNumber = Math.floor(Math.random() * 8)+ 1;
-    // +1 pour éviter le 0
+    // +1 to avoid 0
     let eightBall = '';
     
     switch (randomNumber) {
@@ -41,7 +41,6 @@ if (!userQuestion) {
         case 8: eightBall = 'le grand livre du destin s\'ouvre à la page... OUI en lettres de feu!'; break;
     } 
 
-// userQuestionElement.style.transform = 
 userQuestionElement.innerHTML = `<br>En voilà une question intéressante "${userQuestion}".<br><br>Laissez moi consulter la boule... Je pense que ${eightBall}`
 }
 
@@ -50,7 +49,7 @@ document.getElementById('reponse').appendChild(userQuestionElement);
 
 });
 
-
+//The carrousel section
 const boule1 = document.getElementById("boule");
 const boule2 = document.getElementById("boule2");
 const boule3 = document.getElementById("boule3");
@@ -60,7 +59,7 @@ const nextButton = document.getElementById("right");
 const boules = [boule1, boule2, boule3]; 
 let currentIndex = 0;
 
-// Fonction pour afficher une boule spécifique (cache toutes, montre celle à l'index, définit index)
+// Function to display a specific ball (hide all, show the one at current index, set index)
 function showBoule(index) {
     boules.forEach(boule => boule.style.display = 'none');
     boules[index].style.display = 'block';
@@ -69,14 +68,14 @@ function showBoule(index) {
 
 showBoule(0);
 
-//Pour remettre à la place 0 du tableau
+//To set back to place 0 of the table of balls
 nextButton.addEventListener("click", () => {
     let nextIndex = currentIndex + 1;
     if (nextIndex >= boules.length) nextIndex = 0;
     showBoule(nextIndex);
 });
 
-//Pour remettre à la dernière boule quand on arrive à la première et ce même si on ajoute dans le tableau
+//When going from last place to first place of the carousel, even if add content to the table.
 prevButton.addEventListener("click", () => {
     let prevIndex = currentIndex - 1;
     if (prevIndex < 0 ) prevIndex = boules.length - 1;
