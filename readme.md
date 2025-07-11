@@ -26,3 +26,6 @@ Even though I created three sizes (mobile, tablet, desktop), the appearance on m
 
 I completed this project in mid-April 2025. It has been a month and a half since then. For now, I will publish it as it was written then.
 I have learned a lot since then (at least Git!) and I am still progressing. I hope to publish more advanced work soon.
+
+#### Try it out on Vercel! 
+https://crystal-ball-mu.vercel.app
