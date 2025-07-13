@@ -1,4 +1,4 @@
-/* Base infos */ 
+/* Base infos */
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +7,8 @@
 :root {
     background-color: rgb(51, 51, 99);
     color: antiquewhite;
-    --violet :rgb(105, 105, 173);
+    --violet: rgb(105, 105, 173);
 }
-
 
 
 body {
@@ -19,11 +18,31 @@ body {
     align-items: center;
 }
 
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 h1 {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-size: 2.5rem;
-    margin-top: 2rem;   
+    margin-top: 2rem;
+}
+
+.language {
+    margin-left: 5rem;
+    align-items: end;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+a:hover {
+    color: var(--violet);
 }
 
 /* Form */
@@ -37,7 +56,7 @@ input {
     padding: 0.2rem;
 }
 
-input::placeholder{
+input::placeholder {
     color: var(--violet);
     font-size: 1rem;
     font-family: "EB Garamond", serif;
@@ -48,13 +67,13 @@ input::placeholder{
 }
 
 textarea {
-color: grey;
-font-size: 1rem;
-font-family: "EB Garamond", serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
-padding: 0.2rem;
+    color: grey;
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.2rem;
 }
 
 textarea::placeholder {
@@ -65,9 +84,9 @@ textarea::placeholder {
     font-weight: 400;
     font-style: normal;
     padding: 0.2rem;
-} 
+}
 
-#monFormulaire{
+#myForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,13 +119,14 @@ label {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-} 
+}
 
 .button:hover {
     scale: 110%;
     background-color: antiquewhite;
     color: var(--violet);
 }
+
 
 
 /* Answer section */
@@ -120,7 +140,7 @@ label {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal; 
+    font-style: normal;
     width: 40%;
 }
 
@@ -137,11 +157,11 @@ img {
     cursor: pointer;
 }
 
-img:hover{
+img:hover {
     transform: rotate(20deg);
 }
 
-#changeBoules {
+#changeBalls {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,39 +185,38 @@ footer {
     margin-bottom: 1rem;
 }
 
+
 footer a {
     color: grey;
-    text-decoration: none;
 }
 
 
-/* Other screen sizes */ 
-@media screen and (max-width: 1023px) { 
+/* Other screen sizes */
+@media screen and (max-width: 1023px) {
     h1 {
         font-size: 2rem;
-    } 
+    }
 
     textarea {
         width: 80%;
     }
 
-    #reponse{
+    #reponse {
         width: 40%;
     }
- }
+}
 
 
-@media screen and (max-width: 599px) { 
+@media screen and (max-width: 599px) {
     h1 {
         font-size: 1.5rem;
-    } 
+    }
 
     textarea {
         width: 60%;
     }
-    #reponse{
+
+    #reponse {
         width: 50%;
     }
- }
-
-
+}

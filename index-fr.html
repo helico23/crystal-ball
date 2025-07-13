@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
-    <title>Welcome</title>
+    <title>Bienvenue</title>
     <link rel="icon" type="image/svg+xml" href="./images/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,29 +17,30 @@
 
 <body>
     <header>
-        <h1> Welcome to your favorite fortune teller ! 🔮 </h1>
-        <a href="./index-fr.html"> <button class='button language'> 🇫🇷 Français </button></a>
+        <h1> Bienvenue chez votre voyante favorite ! 🔮 </h1>
+        <a href="./index.html"><button class="button language" id="language"> 🇬🇧 English </button></a>
     </header>
+
     <form id="myForm">
-        <label for="name"> Who is here to see me ? </label>
-        <input type="text" id="name" placeholder="Your name">
+        <label for="name">Qui vient me voir ? </label>
+        <input type="text" id="name" placeholder="Votre prénom">
 
-        <label for="question">What is your question ?</label>
+        <label for="question">Quelle est votre question ?</label>
         <textarea rows="7" cols="50" id="question"
-            placeholder="Will fate be favorable to you ? Avoid open-ended questions as they may break the crystal ball."></textarea>
+            placeholder="Est ce que le sort vous sera favorable ? Ne posez pas de questions ouvertes de peur de briser la boule de cristal."></textarea>
 
 
-        <button type="submit" id="button" class="button"> Send </button>
+        <button type="submit" id="button" class="button"> Envoyer</button>
     </form>
     <section id="changeBalls">
         <button id="left" class="button">
             < </button>
                 <ul class="diaporama-balls" id="diaporama-balls">
-                    <li class="balls"><img onclick="submitForm()" src="./images/ball.png" alt="ball de voyance"
+                    <li class="balls"><img onclick="submitForm()" src="./images/ball.png" alt="boule de voyance"
                             id="ball"></li>
-                    <li class="balls"><img onclick="submitForm()" src="./images/ball2.png" alt="ball de voyance 2"
+                    <li class="balls"><img onclick="submitForm()" src="./images/ball2.png" alt="boule de voyance 2"
                             id="ball2"></li>
-                    <li class="balls"><img onclick="submitForm()" src="./images/ball3.png" alt="ball de voyance 3"
+                    <li class="balls"><img onclick="submitForm()" src="./images/ball3.png" alt="boule de voyance 3"
                             id="ball3"></li>
                 </ul>
 
@@ -50,7 +51,6 @@
     </section>
 </body>
 <footer> Made with passion by <a href="https://github.com/helico32">Angéla Binot</a> </footer>
-
 <!-- Copyright of the images belong to their rightful authors -->
 
 </html>
