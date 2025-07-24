@@ -17,10 +17,10 @@ Even though I created three sizes (mobile, tablet, desktop), the appearance on m
 
 ## Future features? 
 
-• Make an English version available.
-• Submit with a click on the crystal ball.
-• Add multiple transitions for the crystal ball.
-• Make the answer appear gradually.
+* Make an English version available. [Added 13/07]
+* Submit with a click on the crystal ball. [Added 13/07]
+* Add multiple transitions for the crystal ball.
+* Make the answer appear gradually.
 
 ## Final words
 
