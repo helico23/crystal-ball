@@ -22,10 +22,12 @@ header {
     display: flex;
     justify-content: left;
     align-items: center;
+    margin: 0 1rem;
 }
 
 h1 {
-    font-family: "Great Vibes", cursive;
+    font-family: "EB Garamond", italic;
+    font-style: italic;
     font-weight: 400;
     font-size: 2.5rem;
     margin-top: 2rem;
@@ -176,7 +178,7 @@ ul li {
 }
 
 footer {
-    font-family: "EB Garamond", serif;
+    font-family: "EB Garamond", italic;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
@@ -194,7 +196,7 @@ footer a {
 /* Other screen sizes */
 @media screen and (max-width: 1023px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     textarea {
@@ -209,7 +211,7 @@ footer a {
 
 @media screen and (max-width: 599px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     textarea {
