@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
     <title>Bienvenue</title>
-    <link rel="icon" type="image/svg+xml" href="./images/icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="./images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1> Bienvenue chez votre voyante favorite ! </h1>
-        <a href="./index.html"><button class="button language" id="language"> 🇬🇧 English </button></a>
+      <h1>Bienvenue chez votre voyante favorite !</h1>
+      <a href="./index.html"
+        ><button class="button language" id="language">🇬🇧 English</button></a
+      >
     </header>
 
     <form id="myForm">
-        <label for="name">Qui vient me voir ? </label>
-        <input type="text" id="name" placeholder="Votre prénom">
+      <label for="name">Qui vient me voir ? </label>
+      <input type="text" id="name" placeholder="Votre prénom" />
 
-        <label for="question">Quelle est votre question ?</label>
-        <textarea rows="7" cols="50" id="question"
-            placeholder="Est ce que le sort vous sera favorable ? Ne posez pas de questions ouvertes de peur de briser la boule de cristal."></textarea>
-
-
-        <button type="submit" id="button" class="button"> Envoyer</button>
+      <label for="question">Quelle est votre question ?</label>
+      <textarea
+        rows="7"
+        cols="50"
+        id="question"
+        placeholder="Est ce que le sort vous sera favorable ? Ne posez pas de questions ouvertes de peur de briser la boule de cristal."
+      ></textarea>
     </form>
+
+          <p>Cliquez sur votre boule de cristale favorite </p>
     <section id="changeBalls">
-        <button id="left" class="button">
-            < </button>
-                <ul class="diaporama-balls" id="diaporama-balls">
-                    <li class="balls"><img onclick="submitForm()" src="./images/ball.png" alt="boule de voyance"
-                            id="ball"></li>
-                    <li class="balls"><img onclick="submitForm()" src="./images/ball2.png" alt="boule de voyance 2"
-                            id="ball2"></li>
-                    <li class="balls"><img onclick="submitForm()" src="./images/ball3.png" alt="boule de voyance 3"
-                            id="ball3"></li>
-                </ul>
+      <button id="left" class="button"><</button>
+      <ul class="diaporama-balls" id="diaporama-balls">
+        <li class="balls">
+          <img
+            onclick="submitForm()"
+            src="./images/ball.png"
+            alt="boule de voyance"
+            id="ball"
+          />
+        </li>
+        <li class="balls">
+          <img
+            onclick="submitForm()"
+            src="./images/ball2.png"
+            alt="boule de voyance 2"
+            id="ball2"
+          />
+        </li>
+        <li class="balls">
+          <img
+            onclick="submitForm()"
+            src="./images/ball3.png"
+            alt="boule de voyance 3"
+            id="ball3"
+          />
+        </li>
+      </ul>
 
-                <button id="right" class="button"> > </button>
+      <button id="right" class="button">></button>
     </section>
-    <section id="reponse" class="hidden">
-
-    </section>
-</body>
-<footer> Made with passion by <a href="https://github.com/helico32">Angéla Binot</a> </footer>
-<!-- Copyright of the images belong to their rightful authors -->
-
+    <section id="reponse" class="hidden"></section>
+  </body>
+  <footer>
+    Made with passion by <a href="https://github.com/helico32">Angéla Binot</a>
+  </footer>
+  <!-- Copyright of the images belong to their rightful authors -->
 </html>
