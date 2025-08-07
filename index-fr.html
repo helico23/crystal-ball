@@ -36,38 +36,41 @@
       ></textarea>
     </form>
 
-          <p>Cliquez sur votre boule de cristale favorite </p>
-    <section id="changeBalls">
-      <button id="left" class="button"><</button>
-      <ul class="diaporama-balls" id="diaporama-balls">
-        <li class="balls">
-          <img
-            onclick="submitForm()"
-            src="./images/ball.png"
-            alt="boule de voyance"
-            id="ball"
-          />
-        </li>
-        <li class="balls">
-          <img
-            onclick="submitForm()"
-            src="./images/ball2.png"
-            alt="boule de voyance 2"
-            id="ball2"
-          />
-        </li>
-        <li class="balls">
-          <img
-            onclick="submitForm()"
-            src="./images/ball3.png"
-            alt="boule de voyance 3"
-            id="ball3"
-          />
-        </li>
-      </ul>
+    <section id="sectionCarousel">
+      <p>Cliquez sur votre boule de cristale favorite</p>
+      <div id="changeBalls">
+        <button id="left" class="button"><</button>
+        <ul class="diaporama-balls" id="diaporama-balls">
+          <li class="balls">
+            <img
+              onclick="submitForm()"
+              src="./images/ball.png"
+              alt="boule de voyance"
+              id="ball"
+            />
+          </li>
+          <li class="balls">
+            <img
+              onclick="submitForm()"
+              src="./images/ball2.png"
+              alt="boule de voyance 2"
+              id="ball2"
+            />
+          </li>
+          <li class="balls">
+            <img
+              onclick="submitForm()"
+              src="./images/ball3.png"
+              alt="boule de voyance 3"
+              id="ball3"
+            />
+          </li>
+        </ul>
 
-      <button id="right" class="button">></button>
+        <button id="right" class="button">></button>
+      </div>
     </section>
+
     <section id="reponse" class="hidden"></section>
   </body>
   <footer>
